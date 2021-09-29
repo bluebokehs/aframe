@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item id="land" src="assets/scene.gltf"></a-asset-item>
+        <a-asset-item id="cloud" src="assets/clouds/scene.gltf"></a-asset-item>
+      </a-assets>
+        <a-entity gltf-model="#land" position="0 -10 -40" scale="1 1 1" rotation="0 90 0"></a-entity>
+
+        <a-entity gltf-model="#cloud" position="15 10 -8" scale="0.2 0.2 0.2" rotation="-20 45 240"></a-entity>
+        <a-entity gltf-model="#cloud" position="-6 -6 4.5" scale="0.3 0.3 0.3" rotation="-10 0 0"></a-entity>
+        <a-entity gltf-model="#cloud" position="-25 -12 2" scale="0.3 0.3 0.3" rotation="-5 0 10"></a-entity>
+        <a-entity gltf-model="#cloud" position="-30 -12 -5" scale="0.3 0.3 0.3" rotation="-5 0 90"></a-entity>
+
+        <a-cylinder position="1 30 -50" radius="0.25" rotation="30 45 90" height="100" color="#ffffff"></a-cylinder>
+        <a-cylinder position="1 30 -51" radius="0.25" rotation="30 45 90" height="100" color="#ffffff" opacity=".65"></a-cylinder>
+        
+        <a-cylinder position="1 35 -70" radius="0.25" rotation="90 0 120" height="100" color="#ffffff" opacity=".65"></a-cylinder>
+        <a-cylinder position="1 35 -71" radius="0.25" rotation="90 0 120" height="100" color="#ffffff" opacity=".65"></a-cylinder>
+        
+        <a-plane position="0 -10 -30" rotation="-90 0 0" width="100" height="100" color="#34b1eb"></a-plane>
+        <a-sky color="#3481eb"></a-sky>
+        
+        <a-entity light="type: directional; color: #1a5cc7; intensity: 0.5" position="-4 1 0"></a-entity>
+        <a-entity light="color: #ffe5c0; intensity: 1.5" position="4 1 2"></a-entity>
+    </a-scene>
+  </body>
+</html>
